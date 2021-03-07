@@ -8,8 +8,8 @@ public class E02SilsuType {
 		float float1 = 200;
 		float result1 = long1 + float1;
 		System.out.println("long1+float1="+ result1);
-		
-		long result2 = long1 + (long)float1;
+
+		 long result2 = long1 + (long)float1;
 		System.out.println("형변환후 연산="+ result2);
 		long result3 = (long)(long1 + float1);
 		System.out.println("연산후 형변환="+ result3);
