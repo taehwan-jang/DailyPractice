@@ -20,6 +20,8 @@ public class E04LogicOperator {
 		else {
 			System.out.println("num1과 num2는 같습니다.");
 		}
+		int num = 10 % 2;
+		System.out.println(num);
 	}
 
 }
