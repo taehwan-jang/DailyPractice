@@ -9,6 +9,7 @@ public class E06ArrayInit {
 		
 		int[][] arr2 = new int[3][4];
 		System.out.println("arr2Dim[0]="+arr2[0][0]);
+		System.out.println("arr2Dim[2]="+arr2[2][0]);
 		
 		System.out.println("배열 선언과 동시에 초기화");
 		int[] arrDim = {1, 2, 3};
