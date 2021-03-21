@@ -85,7 +85,6 @@ public class E04IsAInheritance {
 		System.out.println("XYZ-1234 펜으로 테블릿 사용==");
 		tablet.write("XYZ-1234");		
 		
-		
 	}
 
 }
