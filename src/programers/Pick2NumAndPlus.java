@@ -33,7 +33,7 @@ numbers 		result
  */
 public class Pick2NumAndPlus {
 	
-	int[] arr;
+	static int[] arr;
 	static int length;
 	static int[] addArr2;
     public int nCr(int n, int r){//nCr 표현하는 메소드 직접 구현해볼것. 더불어 출력까지
