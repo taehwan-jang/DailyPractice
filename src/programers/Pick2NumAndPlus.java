@@ -54,7 +54,7 @@ public class Pick2NumAndPlus {
 		int a=0;
 		for(int i=0 ; i<arr.length-1 ; i++) {
 			for(int j=1 ; j<arr.length ; j++) {
-				if(i>=j) {
+				if(i>=j) { 
 				}
 				else{
 					addArr2[a]=arr[i] + arr[j];
@@ -64,6 +64,8 @@ public class Pick2NumAndPlus {
 		}
 	}
 	//중복 제거 후 더한 arr 출력하는 메소드
+	
+	
 	//중복제거는 switch문 활용? 앞에서부터하면 -> 내림차순이 됨;
 	static void printArr(Pick2NumAndPlus num) {
 		System.out.print("{ ");
@@ -77,7 +79,7 @@ public class Pick2NumAndPlus {
 		System.out.print("}");
 	}
 	public static void main(String[] args) {
-		int[] arr2 = {1,2,30,5,44,8};
+		int[] arr2 = {1,2,30,10,30,10,30,40,2,4,1};
 		Pick2NumAndPlus num = new Pick2NumAndPlus(arr2);
 		printArr(num);
 	}
