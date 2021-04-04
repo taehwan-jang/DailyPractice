@@ -1,4 +1,7 @@
 package programers;
+
+import java.util.Arrays;
+
 /*
 정수 배열 numbers가 주어집니다. numbers에서 서로 다른 인덱스에 있는 두 개의 수를 뽑아 더해서 
 만들 수 있는 모든 수를 배열에 오름차순으로 담아 return 하도록 solution 함수를 완성해주세요.
@@ -36,12 +39,14 @@ public class Pick2NumAndPlus {
 	static int[] arr;
 	static int length;
 	static int[] addArr2;
+	
     public int nCr(int n, int r){//nCr 표현하는 메소드 직접 구현해볼것. 더불어 출력까지
 		length= 1;
 		for(int i=1; i<=r; i++) {
 			length = length*(n-i+1)/i;
 		}
 		return length;
+		
 	}
 	public Pick2NumAndPlus(int[] arrNum) {//arr이 지역변수임.
 		addArr2=new int[nCr(arrNum.length,2)];
@@ -63,12 +68,15 @@ public class Pick2NumAndPlus {
 			}
 		}
 	}
+	
+	
 	//중복 제거 후 더한 arr 출력하는 메소드
 	
 	
 	//중복제거는 switch문 활용? 앞에서부터하면 -> 내림차순이 됨;
 	static void printArr(Pick2NumAndPlus num) {
 		System.out.print("{ ");
+		Arrays.sort(addArr2);
 		for(int i=0 ; i<num.addArr2.length ; i++) {
 			if(num.addArr2[i]==0) {
 			}
@@ -79,7 +87,7 @@ public class Pick2NumAndPlus {
 		System.out.print("}");
 	}
 	public static void main(String[] args) {
-		int[] arr2 = {1,2,30,10,30,10,30,40,2,4,1};
+		int[] arr2 = {2,1,3,4,1};
 		Pick2NumAndPlus num = new Pick2NumAndPlus(arr2);
 		printArr(num);
 	}
